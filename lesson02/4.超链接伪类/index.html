@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*默认的颜色*/
+    a{
+        text-decoration: none;
+        color: black;
+    }
+        /* 伪类实现 鼠标悬浮的颜色*/
+    a:hover{
+        color: blueviolet;
+        font-size: 20px;
+    }
+    /*鼠标按住未释放的颜色*/
+    a:active{
+        color: #e20606;
+        font-size: 20px;
+    }
+        /*text-shadow: 阴影颜色、水平偏移、垂直偏移、阴影半径*/
+    #price{
+        text-shadow: cornflowerblue -10px -10px 2px ;
+    }
+    </style>
+</head>
+<body>
+
+<a href="#">
+    <img src="images/img.png" alt="">
+</a>
+<p>
+    <a href="#">背景图片，仅供参考</a>
+
+</p>
+<p>
+    <a href="">作者：孤尽</a>
+</p>
+<p id="price">
+    ￥99
+</p>
+</body>
+</html>

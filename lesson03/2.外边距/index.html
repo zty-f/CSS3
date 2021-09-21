@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2,ul,li,a,body{
+            /*body等标签总有一个默认的外边距margin：0*/
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        #box{
+            /*border:粗细、样式、颜色*/
+          width: 300px;
+            border: 1px solid blue;
+            margin: 0 auto;   /*外边距*/
+        }
+        form{
+            background: #21D4FD;
+        }
+        h2{
+            font-size: 16px;
+            background-color: #e20606;
+            line-height: 20px;
+            color: white;
+        }
+        input{
+            border: 1px solid black;
+        }
+        div:nth-of-type(1)>input{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <h2>会员登录</h2>
+    <form action="#">
+        <div>
+            <span>用户名：</span>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <span>密码：</span>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <span>邮箱：</span>
+            <input type="text" name="" id="">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

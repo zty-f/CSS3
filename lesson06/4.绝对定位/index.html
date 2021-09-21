@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*绝对定位:
+        1.没有父级元素的定位的前提下，相对于浏览器定位。
+        2.假设父级元素存在定位，我们通常会相对于父级元素进行偏移。
+        3.在父级元素范围内移动。
+        */
+
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        #father{
+            border: 1px solid red;
+            padding: 0;
+            position: relative;
+        }
+        #first{
+            background-color: #bbacac;
+            border: 1px dashed #2d7b4c;
+
+        }
+        #second{
+            background-color: #bbacac;
+            border: 1px dashed #2246c7;
+            position: absolute;
+            right: 100px;
+            top: 20px;
+        }
+        #third{
+            background-color: #bbacac;
+            border: 1px dashed #e8c305;
+
+        }
+    </style>
+
+</head>
+<body>
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+</body>
+</html>

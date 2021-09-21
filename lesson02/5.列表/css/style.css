@@ -1,0 +1,30 @@
+#nav{
+    width: 300px;
+    background: cadetblue;
+}
+.title{
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 60px;
+    /*颜色、图片、图片位置、平铺方式*/
+    background: red url("../images/1.png") 220px 1px no-repeat;
+}
+/*ul li*/
+/*list-style: none  去掉自带圆点    circle空心圆  decimal数字  square正方形
+*/
+ul li{
+    height: 80px;
+    list-style: none;
+    text-indent: 1em;
+    background: cadetblue url("../images/2.png") 200px 1px no-repeat;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}

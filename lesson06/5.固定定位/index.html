@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            height: 2000px;
+        }
+        div:nth-of-type(1){  /*绝对定位：相对于浏览器*/
+            width: 100px;
+            height: 100px;
+            background: #21D4FD;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        div:nth-of-type(2){  /*固定定位：fixed*/
+            width: 50px;
+            height: 50px;
+            background: #e70c26;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div>div1</div>
+<div>div2</div>
+</body>
+</html>

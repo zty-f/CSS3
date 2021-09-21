@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+    /*ul的第一个子元素*/
+    /*ul的最后一个子元素*/
+    ul li:first-child{
+        color: #e20606;
+    }
+    ul li:last-child{
+        color: blue;
+    }
+    /*选中p1   定位到父元素，选中当前的第一个元素
+    选中当前p元素的父类元素，选中父级元素的第一个该类型元素，不能过滤其他类型元素
+    */
+    /*p:nth-child(1){*/
+    /*    color: blueviolet;*/
+    /*}*/
+    /*选中父元素下面的第一个该类型的元素，能够过滤其他类型元素*/
+    p:nth-of-type(1){
+        color: darkorange;
+    }
+
+
+    /*p:first-child{*/
+    /*    color: #e20606;*/
+    /*}*/
+    </style>
+
+</head>
+<body>
+<h1>h1</h1>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<p>p4</p>
+<ul>
+<li>l1</li>
+<li>l2</li>
+<li>l3</li>
+</ul>
+
+</body>
+</html>
